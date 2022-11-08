@@ -1,0 +1,83 @@
+﻿@model IEnumerable<Dominio.Core.Entities.ClienteFiltroDistrito>
+
+@{
+    ViewBag.Title = "listarClientePorDistrito";
+    Layout = "~/Views/Shared/_LayoutPrincipal.cshtml";
+}
+
+<h2>LISTADO DE CLIENTES POR DISTRITO</h2>
+
+<!-- ComboBox -->
+@using (Html.BeginForm())
+{
+    <div class="filtro">
+        <h4>Seleccione el Distrito: </h4>
+        <div>
+            @Html.DropDownList("dis", (SelectList)ViewBag.distrito)
+            <input type="submit" value="Buscar" />
+        </div>
+    </div>
+
+}
+<br />
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ide_cli)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nom_cli)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ape_cli)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.dni_cli)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tel_cli)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.des_dis)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.veces_alquilo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.monto_acumulado)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ide_cli)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nom_cli)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ape_cli)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dni_cli)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tel_cli)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.des_dis)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.veces_alquilo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.monto_acumulado)
+            </td>
+        </tr>
+    }
+
+</table>

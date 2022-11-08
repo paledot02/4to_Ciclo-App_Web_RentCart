@@ -1,0 +1,78 @@
+﻿@model IEnumerable<Dominio.Core.Entities.Cliente>
+
+@{
+    ViewBag.Title = "listarCliente";
+    Layout = "~/Views/Shared/_LayoutPrincipal.cshtml";
+}
+
+<h2>LISTA DE CLIENTES</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ide_cli)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nom_cli)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.dni_cli)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tel_cli)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.des_dis)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ide_cli)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nom_cli)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.dni_cli)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tel_cli)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.des_dis)
+        </td>
+
+        <td>
+
+            <a href="@Url.Action("modificarCliente", "Cliente", new {  id=item.ide_cli } )">
+                <img class="icono" src="~/imagenes/editar.png" />
+            </a>
+
+            <a href="@Url.Action("detalleCliente", "Cliente", new {  id=item.ide_cli } )">
+                <img class="icono iconoBorde" src="~/imagenes/detalle.png" />
+            </a>
+            <a href="@Url.Action("eliminarCliente", "Cliente", new {  id=item.ide_cli} )">
+                <img class="icono" src="~/imagenes/cancelar.png" />
+            </a>
+
+            @*@Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+        @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+        @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })*@
+        </td>
+    </tr>
+}
+
+</table>
+
+<h6>
+    @for (int i = 0; i < ViewBag.pag; i++)
+    {
+        @Html.ActionLink((i + 1).ToString(), "listarCliente", new { p = i }, new { @class = "paginacion" }
+       )
+    }
+</h6>
+

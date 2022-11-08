@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+</head>
+
+<body>
+
+    <header>
+        <figure>
+            <img class="banner" src="~/imagenes/banner_cibertec_1000px.png" />
+        </figure>
+
+        <nav>
+            <ul>
+                <li>@Html.ActionLink("Principal", "Index", "Cliente")</li>
+                <li>@Html.ActionLink("Listado", "listarCliente", "Cliente")</li>
+                <li>@Html.ActionLink("Registrar", "registrarCliente", "Cliente")</li>
+                <li>@Html.ActionLink("Listado por Distrito", "listarClientePorDistrito", "Cliente")</li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section>
+        @RenderBody()
+    </section>
+
+    <footer>
+        <h6>Realizado por Basilio Kevin - 03/07/2022</h6>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+C:\Users\KEVIN\Desktop\CL3_POO2\Dominio.Core.Entities\bin\Debug\Dominio.Core.Entities.dll
+C:\Users\KEVIN\Desktop\CL3_POO2\Dominio.Core.Entities\bin\Debug\Dominio.Core.Entities.pdb
+C:\Users\KEVIN\Desktop\CL3_POO2\Dominio.Core.Entities\obj\Debug\Dominio.Core.Entities.csproj.AssemblyReference.cache
+C:\Users\KEVIN\Desktop\CL3_POO2\Dominio.Core.Entities\obj\Debug\Dominio.Core.Entities.csproj.CoreCompileInputs.cache
+C:\Users\KEVIN\Desktop\CL3_POO2\Dominio.Core.Entities\obj\Debug\Dominio.Core.Entities.dll
+C:\Users\KEVIN\Desktop\CL3_POO2\Dominio.Core.Entities\obj\Debug\Dominio.Core.Entities.pdb
+C:\Users\KEVI\Desktop\RentCar_Web\CL3_POO2\Dominio.Core.Entities\bin\Debug\Dominio.Core.Entities.dll
+C:\Users\KEVI\Desktop\RentCar_Web\CL3_POO2\Dominio.Core.Entities\bin\Debug\Dominio.Core.Entities.pdb
+C:\Users\KEVI\Desktop\RentCar_Web\CL3_POO2\Dominio.Core.Entities\obj\Debug\Dominio.Core.Entities.csproj.AssemblyReference.cache
+C:\Users\KEVI\Desktop\RentCar_Web\CL3_POO2\Dominio.Core.Entities\obj\Debug\Dominio.Core.Entities.csproj.CoreCompileInputs.cache
+C:\Users\KEVI\Desktop\RentCar_Web\CL3_POO2\Dominio.Core.Entities\obj\Debug\Dominio.Core.Entities.dll
+C:\Users\KEVI\Desktop\RentCar_Web\CL3_POO2\Dominio.Core.Entities\obj\Debug\Dominio.Core.Entities.pdb

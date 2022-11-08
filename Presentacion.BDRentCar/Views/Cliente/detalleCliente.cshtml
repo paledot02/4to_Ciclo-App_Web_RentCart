@@ -1,0 +1,56 @@
+﻿@model Dominio.Core.Entities.Cliente
+
+@{
+    ViewBag.Title = "detalleCliente";
+    Layout = "~/Views/Shared/_LayoutPrincipal.cshtml";
+}
+
+<h2>DETALLE DEL CLIENTE</h2>
+
+<div>
+
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ide_cli)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ide_cli)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nom_cli)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nom_cli)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dni_cli)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dni_cli)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tel_cli)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tel_cli)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.des_dis)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.des_dis)
+        </dd>
+
+    </dl>
+</div>
+
